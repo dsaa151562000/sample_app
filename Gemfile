@@ -16,6 +16,8 @@ group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
   gem 'factory_girl_rails', '4.2.1'
+gem 'spork-rails', '4.0.0'
+gem 'childprocess', '0.3.6'
 end
 
 gem 'pg', groups: %w(production), require: false
@@ -53,7 +55,6 @@ group :production do
   gem 'pg', '>=0'
   gem 'rails_12factor', '0.0.2'
 end
-
 
 
 # Use ActiveModel has_secure_password
